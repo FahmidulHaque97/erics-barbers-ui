@@ -11,21 +11,7 @@ export default function Home() {
             {''} with Eric's Barbershop
           </h1>
           <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking to track your bookings? Register an account or login here{' '}
-            <a
-              href="/login"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{' '}
-            or the{' '}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{' '}
-            center.
+            Looking to track your bookings? Register an account or login here.
           </p>
         </div>
         <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">

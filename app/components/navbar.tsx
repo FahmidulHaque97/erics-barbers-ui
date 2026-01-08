@@ -10,16 +10,22 @@ const kaushan = Kaushan_Script({
 
 export default function Navbar() {
   return (
-    <nav className="w-full flex flex-row justify-between">
+    <nav className="w-full flex flex-row justify-between h-[20vh] bg-black">
       <div className="flex flex-1 flex-row justify-between">
         <a href="/services">
-          <span className={`text-2xl text-primary ${kaushan.className}`}>Services</span>
+          <span className={`text-2xl text-primary ${kaushan.className}`}>
+            Services
+          </span>
         </a>
         <a href="/information">
-          <span className={`text-2xl text-primary ${kaushan.className}`}>Information</span>
+          <span className={`text-2xl text-primary ${kaushan.className}`}>
+            Information
+          </span>
         </a>
         <a href="/login">
-          <span className={`text-2xl text-primary ${kaushan.className}`}>Account</span>
+          <span className={`text-2xl text-primary ${kaushan.className}`}>
+            Account
+          </span>
         </a>
       </div>
       <div className="flex flex-1 flex-row justify-center">
