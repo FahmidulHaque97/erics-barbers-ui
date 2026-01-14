@@ -1,6 +1,7 @@
 import { Kaushan_Script } from 'next/font/google';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { WhatsApp as WhatsappIcon } from '@mui/icons-material';
+import Link from 'next/link';
 
 const kaushan = Kaushan_Script({
   variable: '--font-kaushan',
@@ -12,27 +13,27 @@ export default function Navbar() {
   return (
     <nav className="w-full flex flex-row justify-between h-[20vh] bg-black">
       <div className="flex flex-1 flex-row justify-between">
-        <a href="/services">
+        <Link href="/services">
           <span className={`text-2xl text-primary ${kaushan.className}`}>
             Services
           </span>
-        </a>
-        <a href="/information">
+        </Link>
+        <Link href="/information">
           <span className={`text-2xl text-primary ${kaushan.className}`}>
             Information
           </span>
-        </a>
-        <a href="/login">
+        </Link>
+        <Link href="/login">
           <span className={`text-2xl text-primary ${kaushan.className}`}>
             Account
           </span>
-        </a>
+        </Link>
       </div>
       <div className="flex flex-1 flex-row justify-center">
         <span
           className={`font-bold text-2xl text-primary ${kaushan.className}`}
         >
-          <a href="/">Eric's Barbershop</a>
+          <Link href="/">Eric&apos;s Barbershop</Link>
         </span>
       </div>
 
