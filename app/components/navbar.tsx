@@ -15,19 +15,27 @@ export default function Navbar() {
   const navLinks = (
     <>
       <Link href="/services">
-        <span className={`text-2xl text-primary ${kaushan.className}`}>Services</span>
+        <span className={`text-2xl text-primary ${kaushan.className}`}>
+          Services
+        </span>
       </Link>
       <span className={`text-2xl text-primary ${kaushan.className}`}>|</span>
       <Link href="/information">
-        <span className={`text-2xl text-primary ${kaushan.className}`}>Information</span>
+        <span className={`text-2xl text-primary ${kaushan.className}`}>
+          Information
+        </span>
       </Link>
       <span className={`text-2xl text-primary ${kaushan.className}`}>|</span>
       <Link href="/bookings">
-        <span className={`text-2xl text-primary ${kaushan.className}`}>Bookings</span>
+        <span className={`text-2xl text-primary ${kaushan.className}`}>
+          Bookings
+        </span>
       </Link>
       <span className={`text-2xl text-primary ${kaushan.className}`}>|</span>
       <Link href="/login">
-        <span className={`text-2xl text-primary ${kaushan.className}`}>Account</span>
+        <span className={`text-2xl text-primary ${kaushan.className}`}>
+          Account
+        </span>
       </Link>
     </>
   );
@@ -35,7 +43,9 @@ export default function Navbar() {
   return (
     <nav className="flex flex-row justify-between h-[10vh] bg-black pt-8 px-40 border-b-4 border-b-white items-center">
       <div className="flex flex-row justify-start pl-8">
-        <span className={`font-bold text-2xl text-primary ${kaushan.className}`}>
+        <span
+          className={`font-bold text-2xl text-primary ${kaushan.className}`}
+        >
           <Link href="/">Eric&apos;s Barbers</Link>
         </span>
       </div>
@@ -50,28 +60,46 @@ export default function Navbar() {
         onClick={() => setDrawerOpen(true)}
       >
         <svg width="32" height="32" fill="currentColor" viewBox="0 0 20 20">
-          <path fillRule="evenodd" d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+          <path
+            fillRule="evenodd"
+            d="M3 6h14M3 10h14M3 14h14"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+          />
         </svg>
       </button>
       {/* Drawer overlay */}
       {drawerOpen && (
-        <div className="fixed inset-0 z-40 bg-black bg-opacity-60 flex justify-end" onClick={() => setDrawerOpen(false)}>
+        <div
+          className="fixed inset-0 z-40 bg-black bg-opacity-60 flex justify-end"
+          onClick={() => setDrawerOpen(false)}
+        >
           <div
             className="w-2/3 max-w-xs h-full bg-white shadow-lg p-6 flex flex-col gap-6 text-black"
-            onClick={e => e.stopPropagation()}
+            onClick={(e) => e.stopPropagation()}
           >
             <button
               className="self-end mb-4 text-black"
               aria-label="Close menu"
               onClick={() => setDrawerOpen(false)}
             >
-              <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+              <svg
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
               </svg>
             </button>
-            <div className="flex flex-col gap-4">
-              {navLinks}
-            </div>
+            <div className="flex flex-col gap-4">{navLinks}</div>
           </div>
         </div>
       )}

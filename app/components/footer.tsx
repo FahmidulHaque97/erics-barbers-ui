@@ -9,18 +9,23 @@ export default function Footer() {
       <div className="flex flex-col">
         <h5 className="text-base font-semibold mb-4">Developer</h5>
         <span className="text-sm">Website built by Fahmid Haque</span>
-        <a className="text-sm underline text-blue-400 hover:text-blue-600" href="mailto:fahmidulhaque97@pm.me">Contact: fahmidulhaque97@pm.me</a>
+        <a
+          className="text-sm underline text-blue-400 hover:text-blue-600"
+          href="mailto:fahmidulhaque97@pm.me"
+        >
+          Contact: fahmidulhaque97@pm.me
+        </a>
       </div>
       <div className="flex flex-col">
         <h5 className="text-base font-semibold mb-4">Legal</h5>
         <Link href="/privacy-policy">
-          <span className='text-sm'>Privacy Policy</span>
+          <span className="text-sm">Privacy Policy</span>
         </Link>
         <Link href="/terms-of-service">
-          <span className='text-sm'>Terms of Service</span>
+          <span className="text-sm">Terms of Service</span>
         </Link>
         <Link href="/cookie-policy">
-          <span className='text-sm'>Cookie Policy</span>
+          <span className="text-sm">Cookie Policy</span>
         </Link>
       </div>
       <div className="flex flex-col">
@@ -46,11 +51,7 @@ export default function Footer() {
           <span className="text-sm">WhatsApp</span>
         </div>
         <div>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="tel:1234567890"
-          >
+          <a target="_blank" rel="noopener noreferrer" href="tel:1234567890">
             <Phone />
           </a>
           <span className="text-sm">Phone</span>
